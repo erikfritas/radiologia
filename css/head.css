@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+
+    /*background-color: rgb(36, 29, 51);*/
+
+    color: rgb(9, 8, 14);
+}
+
+body {
+    background-image: url("../imgs/minimal.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.rainbow {
+    background-color: rgba(255, 255, 255, .5);
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, red, blue, lime, blue, red);
+    padding: 40px 80px;
+    border-image-slice: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+
+footer {
+    background-color: rgb(24, 21, 32);
+    color: white;
+
+    padding: 30px 40px;
+}
+
+footer h2 {
+    margin-bottom: 30px;
+}
+
+main > div {
+    width: 80%;
+    height: 70vh;
+    padding: 25px;
+
+    margin: auto;
+    margin-bottom: 120px;
+
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .8s;
+}
+
+main > div:not(#m-sumario) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+main > div:not(#m-sumario) > article > p {
+    margin-bottom: 6px;
+}
+
+main h1 {
+    margin-bottom: 45px;
+}
+
+main > div#m-sumario{
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: rgba(240, 248, 255, 0.582);
+}
+
+main > div:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+}
+
+#nome {
+    color: rgb(85, 0, 134);
+}
